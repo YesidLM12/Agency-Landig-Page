@@ -1,13 +1,15 @@
-import { useState } from 'react'
+import { useState } from "react";
 import styles from "../src/styles/App.module.css";
-import Header from './Components/Header';
+import Header from "./Components/Header";
+import Desktop from "./Layouts/Desktop";
 
 function App() {
-  return(
+  return (
     <div className={styles.container}>
-      < Header />
+      <Header />
+      <Desktop />
     </div>
   );
 }
 
-export default App
+export default App;
