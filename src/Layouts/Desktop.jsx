@@ -5,6 +5,7 @@ import graphic from "../assets/images/desktop/image-graphic-design.jpg";
 import photography from "../assets/images/desktop/image-photography.jpg";
 import Cart from "../Components/Cart";
 import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 
 export default function Desktop() {
   return (
@@ -62,6 +63,7 @@ export default function Desktop() {
           />
         </div>
       </section>
+      <Footer />
     </>
   );
 }
