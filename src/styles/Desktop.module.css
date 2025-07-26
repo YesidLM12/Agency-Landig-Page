@@ -18,20 +18,25 @@
   --Fraunces: "Fraunces";
 }
 
+.Cart{
+    height: 33rem;
+}
+
 .content{
     display: flex;
 }
 
 .Cart img{
     width: 50%;
-    height: 50%
+    height: 33rem;
 }
 
 .text{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     width: 50%;
-    padding: 6rem;
     gap: 2rem;
 }
 
@@ -40,13 +45,15 @@
     font-family: var(--Fraunces);
     font-weight: 900;
     font-size: 2.5rem;
+    padding:0 7rem;
 }
 
 .description{
     color: var(--Grey-600);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: var(--Barlow);
     font-weight: 600;
+    padding:0  7rem;
 }
 
 .content a{
@@ -55,6 +62,7 @@
     font-weight: 900;
     text-decoration-color:var(--Yellow-500) ;
     text-underline-offset:4px;
+    padding:0  7rem;
 }
 
 .content .aStandOut{
@@ -63,4 +71,8 @@
     font-weight: 900;
     text-decoration-color:var(--Red-400) ;
     text-underline-offset:4px;
+}
+
+.components{
+    display: flex;
 }
