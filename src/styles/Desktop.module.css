@@ -18,61 +18,124 @@
   --Fraunces: "Fraunces";
 }
 
-.Cart{
-    height: 33rem;
+.Cart,
+.CartCup {
+  display: flex;
+  height: 33rem;
 }
 
-.content{
-    display: flex;
+.content {
+  display: flex;
 }
 
-.Cart img{
-    width: 50%;
-    height: 33rem;
+.Cart img,
+.CartCup img {
+  width: 50%;
 }
 
-.text{
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  gap: 2rem;
+}
+
+.title {
+  color: var(--Grey-950);
+  font-family: var(--Fraunces);
+  font-weight: 900;
+  font-size: 2.5rem;
+  padding: 0 7rem;
+}
+
+.description {
+  color: var(--Grey-600);
+  font-size: 1rem;
+  font-family: var(--Barlow);
+  font-weight: 600;
+  padding: 0 7rem;
+}
+
+.content a {
+  color: var(--Grey-950);
+  font-family: var(--Fraunces);
+  font-weight: 900;
+  text-decoration-color: var(--Yellow-500);
+  text-underline-offset: 4px;
+  padding: 0 7rem;
+}
+
+.content .aStandOut {
+  color: var(--Grey-950);
+  font-family: var(--Fraunces);
+  font-weight: 900;
+  text-decoration-color: var(--Red-400);
+  text-underline-offset: 4px;
+}
+
+.components {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .containerCart {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 50%;
-    gap: 2rem;
-}
-
-.title{
-    color: var(--Grey-950);
-    font-family: var(--Fraunces);
-    font-weight: 900;
-    font-size: 2.5rem;
-    padding:0 7rem;
-}
-
-.description{
-    color: var(--Grey-600);
-    font-size: 1rem;
-    font-family: var(--Barlow);
-    font-weight: 600;
-    padding:0  7rem;
-}
-
-.content a{
-    color: var(--Grey-950);
-    font-family: var(--Fraunces);
-    font-weight: 900;
-    text-decoration-color:var(--Yellow-500) ;
-    text-underline-offset:4px;
-    padding:0  7rem;
-}
-
-.content .aStandOut{
-    color: var(--Grey-950);
-    font-family: var(--Fraunces);
-    font-weight: 900;
-    text-decoration-color:var(--Red-400) ;
-    text-underline-offset:4px;
-}
-
-.components{
+  }
+  .Cart {
+    flex-direction: column;
+    height: auto;
+  }
+  .CartCup {
+    height: auto;
+    flex-direction: column;
+  }
+  .content {
     display: flex;
+    flex-direction: column;
+  }
+
+  .Cart .content {
+    flex-direction: column-reverse;
+  }
+
+  .Cart img,
+  .CartCup img {
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+    height: 30rem;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .description,
+  .title {
+    text-align: center;
+  }
+  .title {
+    padding: 1rem 3rem;
+  }
+
+  .description {
+    padding: 0 1rem;
+    margin-top: -2rem;
+  }
+
+  .components {
+    flex-direction: column;
+    width: 100%;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content a,
+  .aStandOut {
+    padding: 0 10rem;
+  }
 }

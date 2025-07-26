@@ -1,0 +1,13 @@
+.containerCarrusel {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containerCarrusel img {
+  width: 25%;
+}
+@media (max-width: 768px) {
+  .containerCarrusel img {
+    width: 50%;
+  }
+}

@@ -6,6 +6,7 @@ import photography from "../assets/images/desktop/image-photography.jpg";
 import Cart from "../Components/Cart";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import Carrusel from "../Components/Carrusel";
 
 export default function Desktop() {
   return (
@@ -27,7 +28,7 @@ export default function Desktop() {
           </div>
         </div>
 
-        <div className={styles.Cart}>
+        <div className={styles.CartCup}>
           <div className={styles.content}>
             <img src={cup} alt="eggs" />
 
@@ -44,26 +45,28 @@ export default function Desktop() {
             </div>
           </div>
         </div>
-
-        <div className={styles.components}>
-          <Cart
-            title={"Graphic Desig"}
-            description={
-              "Great desig makes you memorable. We deliver artwork thak underscores your brand message and captures potential client´s attention."
-            }
-            background={graphic}
-          />
-
-          <Cart
-            title={"Photography"}
-            description={
-              "Increase your credibility bt getting the most stunnig, high-quality photos that improve your bussiness image."
-            }
-            background={photography}
-          />
-        </div>
       </section>
-      <Footer />
+      <div className={styles.components}>
+        <Cart
+          title={"Graphic Desig"}
+          description={
+            "Great desig makes you memorable. We deliver artwork thak underscores your brand message and captures potential client´s attention."
+          }
+          background={graphic}
+        />
+
+        <Cart
+          title={"Photography"}
+          description={
+            "Increase your credibility bt getting the most stunnig, high-quality photos that improve your bussiness image."
+          }
+          background={photography}
+        />
+      </div>
+      <div className={styles.column}>
+        <Carrusel />
+        <Footer />
+      </div>
     </>
   );
 }
