@@ -1,12 +1,50 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Sunnyside Agency Landing Page 🌞
 
-Currently, two official plugins are available:
+This is a responsive landing page built as part of a frontend practice project. The design follows a clean and modern aesthetic inspired by the Sunnyside creative agency concept.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Sunnyside Desktop Preview](./assets/desktop-design.jpg)
 
-## Expanding the ESLint configuration
+## 🚀 Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- HTML5
+- CSS3
+- JavaScript
+- React (optional, if used)
+- Responsive design (Flexbox & Media Queries)
+
+## 🎯 Features
+
+- Fully responsive layout
+- Smooth section-based design
+- Dropdown/hamburger menu on mobile
+- Interactive "Learn More" hover effect
+- Testimonials section
+- Footer with social media links
+
+## 📂 Project Structure
+
+src/        
+├── assets/ # Images & static files                 
+├── Components/ # Reusable UI components        
+│ ├── Carrusel.jsx      
+│ ├── Cart.jsx      
+│ ├── Clienttestimonial.jsx     
+│ ├── Footer.jsx        
+│ ├── HamburgerMenu.jsx     
+│ ├── Header.jsx        
+│ └── Navbar.jsx        
+├── Layouts/ # Page-level layout        
+│ └── Desktop.jsx       
+├── styles/ # CSS Modules       
+│ ├── App.module.css        
+│ ├── Carrusel.module.css       
+│ ├── Cart.module.css       
+│ ├── ClientTestimonial.module.css      
+│ ├── Desktop.module.css        
+│ ├── Footer.module.css     
+│ ├── HamburgerMenu.module.css      
+│ ├── Header.module.css     
+│ └── Navbar.module.css     
+├── App.jsx     
+└── main.jsx        
