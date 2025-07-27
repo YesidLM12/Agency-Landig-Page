@@ -78,6 +78,22 @@
 .components {
   display: flex;
 }
+.containerTestimonial{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+.testimonial{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.titleTestimonials{
+  color: var(--Grey-400);
+  font-family: var(--Barlow);
+}
 
 @media (max-width: 768px) {
   .containerCart {
@@ -137,5 +153,10 @@
   .content a,
   .aStandOut {
     padding: 0 10rem;
+  }
+
+  .testimonial{
+    display: flex;
+    flex-direction: column;
   }
 }

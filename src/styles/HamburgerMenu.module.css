@@ -1,0 +1,79 @@
+:root {
+  /* --PRIMARY*/
+  --Red-400: hsl(7, 99%, 70%);
+  --Yellow-500: hsl(51, 100%, 49%);
+  --Green-800-graphic-design-text: hsl(167, 40%, 24%);
+  --Blue-800-photography-text: hsl(198, 62%, 26%);
+  --Green-500-footer: hsl(167, 34%, 41%);
+
+  /* --NEUTRAL */
+  --Grey-950: hsl(212, 27%, 19%);
+  --Grey-600: hsl(213, 9%, 39%);
+  --Grey-550: hsl(232, 10%, 55%);
+  --Grey-400: hsl(210, 4%, 67%);
+  --White: hsl(0, 100%, 100%);
+
+  /* --Fonts*/
+  --Barlow: "Barlow";
+  --Fraunces: "Fraunces";
+}
+
+/* HamburgerMenu.css */
+
+.menuContainer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 22rem;
+  border-radius: 4px;
+  text-align: center;
+  gap: 12rem;
+}
+
+.hamburger {
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 25px;
+  z-index: 10;
+}
+
+.menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 1rem 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.ContactBtn {
+  background-color: var(--Yellow-500);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-weight: bold;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

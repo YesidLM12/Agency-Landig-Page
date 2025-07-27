@@ -7,6 +7,10 @@ import Cart from "../Components/Cart";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import Carrusel from "../Components/Carrusel";
+import ClientTestimonial from "../Components/Clienttestimonial";
+import emily from "../assets/images/image-emily.jpg";
+import jennie from "../assets/images/image-jennie.jpg";
+import thomas from "../assets/images/image-thomas.jpg";
 
 export default function Desktop() {
   return (
@@ -64,7 +68,40 @@ export default function Desktop() {
         />
       </div>
       <div className={styles.column}>
+        <div className={styles.containerTestimonial}>
+          <h2 className={styles.titleTestimonials}>CLIENT TESTIMONIALS</h2>
+
+          <div className={styles.testimonial}>
+            <ClientTestimonial
+              img={emily}
+              description={
+                "We put pur trust in Sunnydise and they delivered, making sure our needs were met and deadlines were always hit."
+              }
+              name={"Emily R."}
+              cargo={"Marketing Director"}
+            />
+
+            <ClientTestimonial
+              img={thomas}
+              description={
+                "Synnyside´s enthusiasm coupled with their keen interest in pur brand´s succes made it a satisfying and enjoyable experience."
+              }
+              name={"Thomas S."}
+              cargo={"Chief operating officer"}
+            />
+
+            <ClientTestimonial
+              img={jennie}
+              description={
+                "Incredible end result! Our sales increasen over 400% when we worked with Sunnyside. Highly recommended!"
+              }
+              name={"Jennie F."}
+              cargo={"Bussiness Owner"}
+            />
+          </div>
+        </div>
         <Carrusel />
+
         <Footer />
       </div>
     </>
