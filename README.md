@@ -3,7 +3,7 @@
 
 This is a responsive landing page built as part of a frontend practice project. The design follows a clean and modern aesthetic inspired by the Sunnyside creative agency concept.
 
-![Sunnyside Desktop Preview](./assets/desktop-design.jpg)
+![Sunnyside Desktop Preview](../Agency-Landig-Page/public/design/desktop-design.jpg)
 
 ## 🚀 Technologies Used
 
